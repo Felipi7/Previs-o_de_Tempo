@@ -31,4 +31,5 @@ function updateWeatherInfo(data) {
     document.querySelector(".cloud").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     document.querySelector(".forecast").innerHTML = data.weather[0].description;
     document.querySelector(".humidity").innerHTML = "Umidade " + data.main.humidity + "%";
+    
 }

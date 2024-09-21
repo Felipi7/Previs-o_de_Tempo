@@ -24,6 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* para ajuste em telas pequenas */
 }
 
 .box {
@@ -57,12 +58,12 @@ h3 {
 .input {
     text-transform: capitalize;
     width: 70%;
-    color: #4F4F4F	;
+    color: #4f4f4f;
     height: 45px;
     padding: 10px;
     border-radius: 10px;
     outline: none;
-    border: 1px solid #00BFFF	;
+    border: 1px solid #00BFFF;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     font-size: 18px;
     transition: border 0.3s, box-shadow 0.3s;
@@ -70,10 +71,9 @@ h3 {
 }
 
 .input:focus {
-    border-color: #00BFFF	;
-    box-shadow: 0 0 8px #00BFFF	;
+    border-color: #00BFFF;
+    box-shadow: 0 0 8px #00BFFF;
 }
-
 
 .cloud {
     width: 70px;
@@ -81,11 +81,39 @@ h3 {
 }
 
 .find {
-    width: 45px; 
+    width: 45px;
     height: 45px;
     margin-left: 10px;
 }
+
 .cidade-buscada, span {
-    color: #00BFFF	; 
-    transition: color 0.3s; 
+    color: #00BFFF;
+    transition: color 0.3s;
+}
+
+/* Responsividade */
+
+
+@media (max-width: 480px) {
+    .box {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .input {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .find {
+        width: 35px;
+        height: 35px;
+    }
+
+    .cloud {
+        width: 65px;
+    }
 }
