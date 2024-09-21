@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previsão Tempo</title>
-    <link rel="shortcut icon" href="./Imagens/global.ico" type="image/x-icon">
+    <title>Previsão de Tempo</title>
+    <link rel="shortcut icon" href="./Imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="/script.js"></script>
-
 </head>
 
 <body>
@@ -17,22 +15,21 @@
             <div>
                 <div class="input-area">
                     <input class="input" type="text" placeholder="Cidade">
-                    <button onclick="getCity()" class="search" type="button">Search</button>
+                    <img onclick="getCity()" class="find" src="./Imagens/find.svg" alt="Buscar cidade">
                 </div>
                 <div class="container-city">
-                    <h3 class="city">Temperatura Itabira </h3>
+                    <h3 class="city"><span>Itabira </span></h3>
                     <h3 class="temperature">30 ºC</h3>
                     <div>
-                        <img class="cloud" src="https://openweathermap.org/img/wn/09d.png" alt="">
+                        <img class="cloud" src="https://openweathermap.org/img/wn/09d.png" alt="Nuvem">
                         <h3 class="forecast">Nublado</h3>
-                    
                     </div>
                     <h3 class="humidity">Umidade 31%</h3>
                 </div>
             </div>
-
         </div>
     </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>
