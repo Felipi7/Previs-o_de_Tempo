@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicação de previsão do tempo para várias cidades">
     <title>Previsão de Tempo</title>
     <link rel="shortcut icon" href="./Imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script> 
 </head>
 
 <body>
@@ -14,22 +16,23 @@
         <div class="box">
             <div>
                 <div class="input-area">
-                    <input class="input" type="text" placeholder="Cidade">
-                    <img onclick="getCity()" class="find" src="./Imagens/find.svg" alt="Buscar cidade">
+                    <input class="input" type="text" placeholder="Cidade" aria-label="Campo de busca de cidade">
+                    <img onclick="getCity()" class="find" src="./Imagens/find.svg" alt="Ícone para buscar cidade">
                 </div>
                 <div class="container-city">
                     <h3 class="city"><span>Itabira</span></h3>
                     <h3 class="temperature">30 ºC</h3>
                     <div>
-                        <img class="cloud" src="https://openweathermap.org/img/wn/09d.png" alt="Nuvem">
+                        <img class="cloud" src="https://openweathermap.org/img/wn/02d.png" alt="Ícone de nuvem">
                         <h3 class="forecast">Nublado</h3>
                     </div>
-                    <h3 class="humidity">Umidade 31%</h3>
+                    <h3 class="humidity">Umidade: 31%</h3>
+                    <h3 class="country">País: BR</h3>
+                    <h3 class="hora"></h3>
                 </div>
             </div>
         </div>
     </div>
-    <script src="/script.js"></script>
 </body>
 
 </html>
